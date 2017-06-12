@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> Protein Signal Search </title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body id="home">
+    <h1> Protein Signal Search </h1>
+<!-- outputs a box for user to enter protein sequence -->
+<!-- user inputted search sent to specified cgi script -->
+    <p>
+    <form name='signal_search' method='post' action='./signalsearchFasta.cgi'>
+    <textarea name="signal_search" rows="10" cols="50" autofocus="autofocus">
+    </textarea> 
+    </p>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>     
