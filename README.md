@@ -39,6 +39,7 @@ database information: klauer2
 table: signal
 columns: name, example, location, reference
 
+
 Database Information:
 Database Information was obtained from http://genome.unmc.edu/LocSigDB/cgi-bin/search.cgi?signal=all 
 King BR, Guda C. ngLOC: an n-gram-based Bayesian method for estimating the subcellular proteomes of eukaryotes. 
