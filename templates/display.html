@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+      <meta charset="utf-8">
+        <!--[if IE]>
+            <script src="http//html5shiv.googlecode.com/svn/trunk/html5.js"</script>
+        <![endif]-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+        <!-- stylesheet below is a modified form of tablesorter.com/themes/blue/style.css -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" id="" media="print, projection, screen" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"</script>
+        <script>
+            window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')
+        </script>
+        <script type="text/javascript" src="tablesorter/tablesorter-master/jquery.tablesorter.js"></script>
+        <script type="text/javascript" src="js/sorter.js"></script>
+    </head>
+    <body>       
+      <h1>Signal Search Results</h1>
+      <ul>
+<!-- prints out if there was a match -->
+      <p><b>
+         Match Found:  {{  match  }}
+      </p><p>
+<!-- if a fasta format was entered prints out description line -->
+         Protein Name:  {{ protein_name }}
+      </b>
+<!-- printout of database results -->
+      <table id="output" class="tablesorter" border="0" cellpadding="0" cellspacing="1">
+        <thead>
+            <tr>
+                <th>  Signal Name  </th>
+                <th>  Example Protein </th>
+                <th>  Membrane Location  </th>
+                <th>  References  </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for signals in signal %}
+          <tr>
+            <td>{{ signals.name }}</td>
+            <td>{{ signals.example }}</td>
+            <td>{{ signals.location }}</td>
+            <td>{{ signals.reference }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table> 
+      <p> Information for this table was obtained from <a href="http://genome.unmc.edu/LocSigDB/index.html">LocSigDB</a></p>
+      </ul>
+    </body>
+</html>     
