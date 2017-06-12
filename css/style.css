@@ -1,0 +1,45 @@
+/* tables */
+/* this was modified code from tablesorter.com/themes/blue/style.css */
+/* written by Christian Bach */
+table.tablesorter {
+	font-family:Verdana;
+	background-color: rgb(255,255,255);
+        width: 100%;
+	margin:10px 0pt 15px;
+	font-size: 10pt;
+	text-align: left;
+        border-collapse: collapse;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid rgb(150,150,150);
+	font-size: 10pt;
+	padding: 4px;
+        font-weight: bolder;
+}
+table.tablesorter thead tr .header {
+        border: 1px solid rgb(150,150,150);
+	background-image: url(http://tablesorter.com/themes/blue/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+        border: 1px solid rgb(150,150,150);
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(http://tablesorter.com/themes/blue/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(http://tablesorter.com/themes/blue/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
