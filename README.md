@@ -29,18 +29,29 @@ otherwise protein name with be "n/a".
 
 Requirements:
 JQuery plugin Datasorter - https://mottie.github.io/tablesorter/docs/
+
 JQuery 1.9+ for full use of Datasorter
+
 js/sorter.js
+
 css/style.css - modified version of tablesorter.com/themes/blue/style.css
+
 searchinput.html
+
 signalsearchFasta.cgi
+
 templates/display.html
+
 database information: klauer2
+
 table: signal
+
 columns: name, example, location, reference
 
 
 Database Information:
+
 Database Information was obtained from http://genome.unmc.edu/LocSigDB/cgi-bin/search.cgi?signal=all 
+
 King BR, Guda C. ngLOC: an n-gram-based Bayesian method for estimating the subcellular proteomes of eukaryotes. 
 Genome biology. 2007;8(5):R68. [PubMed]
