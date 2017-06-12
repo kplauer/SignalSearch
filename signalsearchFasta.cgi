@@ -141,9 +141,10 @@ signal_info = []
 
 # if signal found connect to database
 if signal_found == True:
-   
+    
+#User and password information have been removed   
     try:
-        conn = mysql.connector.connect(user='klauer2', password='t3tra', host='localhost', database='klauer2')
+        conn = mysql.connector.connect(user='  ', password='   ', host='localhost', database='klauer2')
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("ACCESS_DENIED_ERROR. Check user name and password")
